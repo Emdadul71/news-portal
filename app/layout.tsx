@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Bengali } from "next/font/google";
 import "./../styles/main.scss";
+import "react-quill/dist/quill.snow.css";
 import { Providers } from "./providers";
 
 const noto = Noto_Sans_Bengali({

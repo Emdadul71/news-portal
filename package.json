@@ -25,6 +25,8 @@
     "react-icons": "^4.12.0",
     "react-phone-input-2": "^2.15.1",
     "react-player": "^2.14.1",
+    "react-pro-sidebar": "^1.1.0-alpha.1",
+    "react-quill": "^2.0.0",
     "react-redux": "^9.0.4",
     "react-slick": "^0.29.0",
     "react-transition-group": "^4.4.5",

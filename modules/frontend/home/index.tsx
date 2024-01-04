@@ -6,15 +6,21 @@ import Opinion from "./@components/opinion";
 import Gallery from "./@components/gallery";
 import VideoGallery from "./@components/video-gallery";
 import Crime from "./@components/crime";
+import World from "./@components/world";
+import Business from "./@components/business";
+import Comments from "./@components/comments";
 
 const Home = () => {
   return (
     <>
-      <TopStories />
       <BreakingNews />
+      <TopStories />
       <CountryNews />
       <Crime />
-      <Opinion />
+      <World />
+      <Business />
+      <Comments />
+      {/* <Opinion /> */}
       <Gallery />
       <VideoGallery />
     </>
