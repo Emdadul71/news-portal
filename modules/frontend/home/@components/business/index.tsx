@@ -13,7 +13,7 @@ function Business() {
         </div>
         <div className=" grid grid-cols-4">
           {new Array(4).fill(
-            <Link href={"/"}>
+            <Link href={"/"} className="group hover:text-inherit">
               <div className=" flex flex-col gap-3 pr-4">
                 <div className=" mb-[5px]">
                   <Image
@@ -23,7 +23,7 @@ function Business() {
                     alt="crime"
                   />
                 </div>
-                <h1 className=" text-[20px] font-semibold mb-0">
+                <h1 className=" text-[20px] font-semibold mb-0 group-hover:text-primary transition-all">
                   আমদানি–রপ্তানিতে ভাটা কনটেইনার ডিপোর ব্যবসা কমে গেছে
                 </h1>
                 <p className=" text-[16px] mb-0">

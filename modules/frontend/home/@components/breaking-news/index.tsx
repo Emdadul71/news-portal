@@ -1,29 +1,34 @@
 import Link from "next/link";
 import React from "react";
+import { RxCross2 } from "react-icons/rx";
 
 const BreakingNews = () => {
   return (
-    <section>
-      <div className="container">
-        <div className=" flex flex-col gap-6">
-          <h1 className=" mb-0 text-[28px] font-semibold">সদ্যপ্রাপ্ত সংবাদ</h1>
-          <div className=" grid grid-cols-3 gap-[26px]">
-            {new Array(3).fill(
-              <Link href="/">
-                <div className=" flex flex-col gap-2 pr-4  border border-gray-100 p-[24px]">
-                  <h1 className=" text-[16px] font-semibold mb-0">
-                    ড. ইউনূসকে দোষী সাব্যস্ত করা বাংলাদেশের মানবাধিকারের অবরুদ্ধ
-                    দশার প্রতীক: অ্যামনেস্টি
-                  </h1>
+    <>
+      <section>
+        <div className="container">
+          <div className=" flex flex-col gap-6">
+            <h1 className=" mb-0 text-[28px] font-semibold">
+              সদ্যপ্রাপ্ত সংবাদ
+            </h1>
+            <div className=" grid grid-cols-3 gap-[26px]">
+              {new Array(3).fill(
+                <Link href="/">
+                  <div className=" flex flex-col gap-2 pr-4  border border-gray-100 p-[24px]">
+                    <h1 className=" text-[16px] font-semibold mb-0">
+                      ড. ইউনূসকে দোষী সাব্যস্ত করা বাংলাদেশের মানবাধিকারের
+                      অবরুদ্ধ দশার প্রতীক: অ্যামনেস্টি
+                    </h1>
 
-                  <p className=" text-[13px] mb-0">ডিসেম্বর ২৭,২০২৩</p>
-                </div>
-              </Link>
-            )}
+                    <p className=" text-[13px] mb-0">ডিসেম্বর ২৭,২০২৩</p>
+                  </div>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

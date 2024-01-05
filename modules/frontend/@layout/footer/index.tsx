@@ -24,7 +24,7 @@ const Footer = () => {
   // };
 
   return (
-    <section>
+    <section className="pb-4">
       <div className="container border-gray-300 border-t pt-[40px]  ">
         <div className=" mb-[50px]">
           <Link href="/">
@@ -101,19 +101,19 @@ const Footer = () => {
               <p className="mb-0 text-[13px] text-[#4B465C]"> বিডি ক্যাম্পাস</p>
             </Link>
             <div>
-              <GoDot className="h-6 w-6 p-1 " />
+              <GoDot className="text-lg" />
             </div>
             <Link href="/">
               <p className=" mb-0 text-[13px] text-[#4B465C]">বিজ্ঞাপন</p>
             </Link>
             <div>
-              <GoDot className="h-6 w-6 p-1 " />
+              <GoDot className="text-lg" />
             </div>
             <Link href="/">
               <p className=" mb-0 text-[13px] text-[#4B465C]">সার্কুলেশন</p>
             </Link>
             <div>
-              <GoDot className="h-6 w-6 p-1 " />
+              <GoDot className="text-lg" />
             </div>
             <Link href="/">
               <p className=" mb-0 text-[13px] text-[#4B465C]">
@@ -121,7 +121,7 @@ const Footer = () => {
               </p>
             </Link>
             <div>
-              <GoDot className="h-6 w-6 p-1 " />
+              <GoDot className="text-lg" />
             </div>
             <Link href="/">
               <p className=" mb-0 text-[13px] text-[#4B465C]">গোপনীয়তা নীতি</p>

@@ -46,46 +46,6 @@ const topStoriesData1 = [
 
 const Crime = () => {
   return (
-    // <section>
-    //   <div className="container">
-    //     <div className="grid grid-cols-[1fr_620px_1fr] gap-5 self-start">
-    //       <div></div>
-
-    //       {topStoriesData?.map((item: any, i: any) => {
-    //         const isSecond = i == 0;
-    //         const isThird = i == 2;
-    //         return (
-    //           <>
-    //             <BlogCard
-    //               key={i}
-    //               data={item}
-    //               classes={{
-    //                 root: isSecond
-    //                   ? "w-full row-span-2"
-    //                   : isThird
-    //                   ? "grid-cols-1"
-    //                   : "",
-    //                 imageWrapper: isSecond
-    //                   ? "h-[396px]"
-    //                   : isThird
-    //                   ? "!h-[190px] !mb-0"
-    //                   : "",
-
-    //                 imageStyle: isSecond ? "h-full" : "h-full",
-    //                 title: isSecond ? "text-[28px]" : "text-lg !mb-0",
-    //                 desc: isSecond ? "" : "hidden",
-    //                 date: "hidden",
-    //               }}
-    //             />
-    //             {/* <div className="w-full h-[1px] bg-grey my-5"></div> */}
-    //           </>
-    //         );
-    //       })}
-    //       <div></div>
-    //     </div>
-    //   </div>
-    // <div className="mx-[12px] flex h-fll w-[1px] divide-y bg-[#DBDADE]"></div>
-    // </section>
     <section>
       <div className="container">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
@@ -105,7 +65,7 @@ const Crime = () => {
               return (
                 <>
                   <Link href={"/"}>
-                    <div className="grid grid-cols-[116px_1fr] items-center gap-[10px] relative">
+                    <div className="grid grid-cols-[116px_1fr] items-center gap-[10px] relative group">
                       <div>
                         <Image
                           height={75}
@@ -114,7 +74,7 @@ const Crime = () => {
                           alt="crime"
                         />
                       </div>
-                      <h2 className="text-lg line-clamp-2 mb-0 hover:text-primary duration-300">
+                      <h2 className="text-lg line-clamp-2 mb-0 group-hover:text-primary duration-300">
                         {item?.title}
                       </h2>
                     </div>
@@ -126,7 +86,7 @@ const Crime = () => {
               );
             })}
           </div>
-          <Link href={"/"}>
+          <Link href={"/"} className="group hover:text-inherit">
             <div className="border-l border-r pr-3 pl-3">
               <div className="h-[396px] mb-4">
                 <Image
@@ -139,7 +99,7 @@ const Crime = () => {
               </div>
 
               <div className="flex flex-col gap-[10px]">
-                <h1 className="mb-0 text-[28px]">
+                <h1 className="mb-0 text-[28px] group-hover:text-primary transition-all">
                   হত্যার সাত দিন পর থানায় গিয়ে বললেন, ‘স্যার, আমি একটা অন্যায়
                   করে ফেলেছি’
                 </h1>
