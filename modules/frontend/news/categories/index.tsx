@@ -1,13 +1,12 @@
-import { Select } from "antd";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { FiMapPin } from "react-icons/fi";
-import { GoDotFill } from "react-icons/go";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import HeadingWithOverlay from "./@components/HeadingWithOverlay";
 import CartMedium from "./@components/CartMedium";
 import HeadingWithOption from "./@components/HeadingWithOption";
+import NewsSearch from "./@components/NewsSearch";
+import Image from "next/image";
+import AdvertiseSpace1 from "./@components/Advertisement_Space/AdvertiseSpace1";
+import AdvertiseSpace2 from "./@components/Advertisement_Space/AdvertiseSpace2";
+import NewsList from "./@components/NewsList";
 
 const Categories = () => {
   return (
@@ -24,71 +23,15 @@ const Categories = () => {
               </div>
             </div>
           </div>
-          <div className=" felx flex-col self-start">
+          <div>
             <div>
-              <Image
-                height={75}
-                width={615}
-                src={"/images/home/ad.png"}
-                alt="crime"
-                className=" mb-[26px]"
-              />
-            </div>
-            <div className=" bg-[#FAFCFF] p-[26px] ">
-              <div className="  flex gap-[10px]">
-                <FiMapPin className=" text-[#FE0000] text-[24px]" />
-                <p className=" mb-[26px] text-xl">আমার এলাকার খবর</p>
-              </div>
-              <div className=" flex flex-col gap-[20px]">
-                <Select
-                  defaultValue="বিভাগ"
-                  className=" w-[100%]"
-                  options={[
-                    {
-                      label: "বিভাগ",
-                      value: "বিভাগ",
-                    },
-                    {
-                      label: "বিভাগ",
-                      value: "বিভাগ",
-                    },
-                  ]}
-                />
-                <Select
-                  defaultValue="জেলা"
-                  className=" w-[100%]"
-                  options={[
-                    {
-                      label: "জেলা",
-                      value: "জেলা",
-                    },
-                    {
-                      label: "জেলা",
-                      value: "জেলা",
-                    },
-                  ]}
-                />
-                <Select
-                  defaultValue="উপজেলা"
-                  className=" w-[100%]"
-                  options={[
-                    {
-                      label: "উপজেলা",
-                      value: "উপজেলা",
-                    },
-                    {
-                      label: "উপজেলা",
-                      value: "উপজেলা",
-                    },
-                  ]}
-                />
-                <button className=" text-[13px] font-medium leading-[17px] p-2 w-full bg-[#FE0000] text-white rounded hover:bg-slate-400 transition-all">
-                  খুঁজুন
-                </button>
-              </div>
+              <AdvertiseSpace1 />
+              <NewsSearch />
             </div>
           </div>
         </div>
+        <AdvertiseSpace2 />
+        <NewsList />
       </div>
     </section>
   );
