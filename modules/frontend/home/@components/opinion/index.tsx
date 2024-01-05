@@ -11,9 +11,7 @@ const Opinion = () => {
           <div className="pl-3 pr-3">
             <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
               <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px] " />
-              <h1 className=" text-[28px] text-black   font-semibold mb-0">
-                বাংলাদেশ
-              </h1>
+              <h1 className="text-[28px] text-black  mb-0">বাংলাদেশ</h1>
             </div>
 
             <Link
