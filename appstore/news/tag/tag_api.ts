@@ -1,4 +1,4 @@
-import { apiSlice } from "@/appstore/api_slice";
+import { apiSlice } from "@/appstore/api-slice";
 
 export const tagApi = apiSlice.injectEndpoints({
   endpoints: (build) => ({

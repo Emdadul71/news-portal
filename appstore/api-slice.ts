@@ -43,7 +43,15 @@ const baseQueryWithReauth: BaseQueryFn<
 export const apiSlice = createApi({
   reducerPath: REDUCER_PATH,
   baseQuery: baseQueryWithReauth,
-  tagTypes: ["Media", "mediaFolders", "blog", "ProfileData"],
+  tagTypes: [
+    "Media",
+    "mediaFolders",
+    "blog",
+    "ProfileData",
+    "Category",
+    "News",
+    "Tag",
+  ],
   keepUnusedDataFor: 0,
   endpoints: () => ({}), // You can define your endpoints here
 });
