@@ -26,7 +26,7 @@ function Business() {
                 <h1 className=" text-[20px] font-semibold mb-0 group-hover:text-primary transition-all">
                   আমদানি–রপ্তানিতে ভাটা কনটেইনার ডিপোর ব্যবসা কমে গেছে
                 </h1>
-                <p className=" text-[16px] mb-0">
+                <p className="mb-0 line-clamp-2">
                   ডলার সংকটে পণ্য আমদানিতে ভাটা চলছে। রপ্তানিও খুব বেশি বাড়ছে
                   না। তাতে চট্টগ্রাম বন্দর দিয়ে আমদানি-রপ্তানি পণ্য ব্যবস্থাপনায়
                   নিয়োজিত বেসরকারি কনটেইনার ডিপোগুলোর ব্যবসা।
@@ -50,7 +50,7 @@ function Business() {
                       alt="crime"
                     />
                   </div>
-                  <p className=" mb-0 text-[#4B4B4B] font-medium text-[18px]">
+                  <p className="mb-0 font-medium text-lg line-clamp-2">
                     ব্যাংকঋণের সর্বোচ্চ সুদের হার বেড়ে ১১.৮৯ শতাংশ
                   </p>
                 </div>

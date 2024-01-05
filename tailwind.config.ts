@@ -19,7 +19,7 @@ const config: Config = {
         grey: "#F4F7FF",
         black: "#000",
         hover: "#be1622",
-        heading: "#170103",
+        heading: "#4B4B4B",
         body: "#575757",
       },
       fontSize: {

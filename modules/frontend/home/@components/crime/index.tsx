@@ -118,7 +118,7 @@ const Crime = () => {
               const isLast = i == 0;
               return (
                 <>
-                  <Link href={"/"}>
+                  <Link href="#" className="group hover:text-inherit">
                     <div>
                       <div className="mb-4">
                         <Image
@@ -128,7 +128,7 @@ const Crime = () => {
                           alt="crime"
                         />
                       </div>
-                      <h1 className=" text-[20px] font-semibold leading-[26px text-[#4B4B4B] mb-0 hover:text-primary duration-300">
+                      <h1 className=" text-xl mb-0 group-hover:text-primary transition-all ">
                         ব্যাংক কর্মকর্তার অর্থ হাতাতে ভিসেরা প্রতিবেদনে
                         ‘জালিয়াতি’।
                       </h1>
