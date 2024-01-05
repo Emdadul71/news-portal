@@ -37,7 +37,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className=" flex flex-col gap-[30px] border-b border-gray-300 pb-[40px] ">
-          <div className=" w-full  flex justify-between text-[14px] text-[#9A9EA6]">
+          <div className="flex justify-between text-[14px] text-[#9A9EA6]">
             <Link href="/">
               <p className="mb-0">About us</p>
             </Link>
@@ -78,56 +78,77 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className=" flex justify-between pt-[37px] pb-[40px] border-b border-gray-300">
-          <div className=" flex gap-[15px] text-[24px] ">
-            <Link href={"/"}>
-              <RiFacebookBoxLine />
-            </Link>
-            <Link href={"/"}>
-              <BsTwitterX />
-            </Link>
-            <Link href={"/"}>
-              <FaWhatsapp />
-            </Link>
-            <Link href={"/"}>
-              <FaInstagram />
-            </Link>
-            <Link href={"/"}>
-              <IoLogoYoutube />
-            </Link>
-          </div>
-          <div className=" flex gap-[5px] items-center">
-            <Link href="/">
-              <p className="mb-0 text-[13px] text-[#4B465C]"> বিডি ক্যাম্পাস</p>
-            </Link>
-            <div>
-              <GoDot className="text-lg" />
-            </div>
-            <Link href="/">
-              <p className=" mb-0 text-[13px] text-[#4B465C]">বিজ্ঞাপন</p>
-            </Link>
-            <div>
-              <GoDot className="text-lg" />
-            </div>
-            <Link href="/">
-              <p className=" mb-0 text-[13px] text-[#4B465C]">সার্কুলেশন</p>
-            </Link>
-            <div>
-              <GoDot className="text-lg" />
-            </div>
-            <Link href="/">
-              <p className=" mb-0 text-[13px] text-[#4B465C]">
+
+        <div className="flex justify-between pt-[37px] pb-[40px] border-b border-gray-300">
+          <ul className=" flex gap-4">
+            <li>
+              <a href="#" target="_blank">
+                <RiFacebookBoxLine className="text-[24px]" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="_blank">
+                <BsTwitterX className="text-[24px]" />
+              </a>
+            </li>
+            <li>
+              <Link href="#">
+                <FaWhatsapp className="text-[24px]" />
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <FaInstagram className="text-[24px]" />
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <IoLogoYoutube className="text-[24px]" />
+              </Link>
+            </li>
+          </ul>
+
+          <ul className=" flex gap-[5px] items-center">
+            <li>
+              <Link href="/" className="text-[13px]">
+                বিডি ক্যাম্পাস
+              </Link>
+            </li>
+            <li>
+              <GoDot className="text-base" />
+            </li>
+            <li>
+              <Link href="/" className="text-[13px]">
+                বিজ্ঞাপন
+              </Link>
+            </li>
+            <li>
+              <GoDot className="text-base" />
+            </li>
+            <li>
+              <Link href="/" className="text-[13px]">
+                সার্কুলেশন
+              </Link>
+            </li>
+            <li>
+              <GoDot className="text-base" />
+            </li>
+            <li>
+              <Link href="/" className="text-[13px]">
                 শর্তাবলি ও নীতিমালা
-              </p>
-            </Link>
-            <div>
-              <GoDot className="text-lg" />
-            </div>
-            <Link href="/">
-              <p className=" mb-0 text-[13px] text-[#4B465C]">গোপনীয়তা নীতি</p>
-            </Link>
-          </div>
+              </Link>
+            </li>
+            <li>
+              <GoDot className="text-base" />
+            </li>
+            <li>
+              <Link href="/" className="text-[13px]">
+                গোপনীয়তা নীতি
+              </Link>
+            </li>
+          </ul>
         </div>
+
         <div className=" flex justify-center items-center gap-[10px] h-[30px] mt-[30px]">
           <h1 className=" mb-0 text-[13px] text-[#A8AAAE]">
             স্বত্ব © ১৯৯৮-২০২৩ বিডি ক্যাম্পাস

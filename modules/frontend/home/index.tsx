@@ -20,9 +20,9 @@ const Home = () => {
       <World />
       <Business />
       <Comments />
-      {/* <Opinion /> */}
       <Gallery />
       <VideoGallery />
+      <Opinion />
     </>
   );
 };
