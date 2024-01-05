@@ -7,3 +7,19 @@
 @import "./base/buttons";
 @import "./base/misc";
 @import "./base/media";
+
+.ant-collapse-content-box {
+  color: #4b465c;
+  font-size: 15px;
+}
+.ant-collapse-header-text {
+  font-size: 18px;
+  color: #4b465c;
+}
+.ant-collapse {
+  border: none;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  border-bottom: 1px solid rgb(237, 237, 237);
+}
