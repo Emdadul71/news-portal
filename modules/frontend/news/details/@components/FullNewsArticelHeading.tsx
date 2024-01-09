@@ -9,7 +9,6 @@ import { RiFacebookBoxLine } from "react-icons/ri";
 export default function FullNewsArticelHeading() {
   return (
     <div>
-      {" "}
       <div>
         <div className=" flex gap-[10px] items-center mt-1 mb-[12px]">
           <p className=" t-[#4B465C] mb-0 text-[16px] leading-[21px]">

@@ -6,6 +6,8 @@ import CartMedium from "../categories/@components/CartMedium";
 import FullNewsArticelHeading from "./@components/FullNewsArticelHeading";
 import FullNewsArticel from "./@components/FullNewsArticel";
 import CommentShareReadmore from "./@components/CommentShareReadmore";
+import FullNewsArticelRight from "./@components/FullNewsArticelRight";
+import ReadMore from "./@components/ReadMore";
 
 export default function NewsDetails() {
   return (
@@ -17,14 +19,24 @@ export default function NewsDetails() {
             <AdvertiseSpace1 />
           </div>
         </div>
-
-        <FullNewsArticel />
-        <FullNewsArticel />
-        <div className=" flex justify-end">
-          <div className="grid grid-cols-[709px_295px] gap-[26px]">
+        <div className=" grid grid-cols-[2fr_1fr] gap-[120px] ml-[50px]">
+          <div className=" w-[709px]">
+            <FullNewsArticel />
+            <FullNewsArticel />
+            <ReadMore />
             <CommentShareReadmore />
           </div>
+          <div>
+            <div className=" border-b-[1px] border-gray-200">
+              <h1 className=" text-base font-semibold leading-5 mb-3  ">
+                রাজনীতি নিয়ে আরও পড়ুন
+              </h1>
+            </div>
+            {new Array(5).fill(<FullNewsArticelRight />)}
+            <AdvertiseSpace1 />
+          </div>
         </div>
+
         <div className=" mt-[26px] mb-[26px] border-b-[1px] border-t-[1px] border-gray-200">
           <AdvertiseSpace2 />
         </div>
