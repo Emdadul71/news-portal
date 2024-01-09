@@ -12,7 +12,7 @@ const config: Config = {
         smd: "620px",
       },
       colors: {
-        primary: "#be1622",
+        primary: "#FE0000",
         white: "#fff",
         secondary: "#1D1D1B",
         tertiary: "#EA0519",
