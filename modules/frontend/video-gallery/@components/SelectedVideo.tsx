@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdKeyboardDoubleArrowRight, MdPlayArrow } from "react-icons/md";
 
@@ -11,27 +12,29 @@ export default function SelectedVideo() {
       </div>
       <div className=" grid grid-cols-4 gap-[26px]">
         {new Array(4).fill(
-          <div className=" flex flex-col gap-[17px] relative">
-            <div>
+          <Link href={"/"} className="group hover:text-inherit">
+            <div className=" flex flex-col gap-[17px] relative">
               <div>
-                <MdPlayArrow className="bg-[#FE0000] rounded-full text-white text-[25px] absolute top-0 left-0 m-[10px] cursor-pointer" />
+                <div>
+                  <MdPlayArrow className="bg-[#FE0000] rounded-full text-white text-[25px] absolute top-0 left-0 m-[10px] cursor-pointer" />
+                </div>
+                <Image
+                  height={190}
+                  width={615}
+                  src={"/images/home/video1.png"}
+                  alt="crime"
+                />
               </div>
-              <Image
-                height={190}
-                width={615}
-                src={"/images/home/video1.png"}
-                alt="crime"
-              />
+              <div className="grid gap-3">
+                <h1 className=" mb-0 text-[18px]  font-semibold line-clamp-2 group-hover:text-primary transition-all">
+                  আমদানি–রপ্তানিতে ভাটা কনটেইনার ডিপোর ব্যবসা কমে গেছে
+                </h1>
+                <p className=" text-[13px] text-gray-400 mb-0">
+                  ডিসেম্বর ২৭,২০২৩
+                </p>
+              </div>
             </div>
-            <div className="grid gap-3">
-              <h1 className=" mb-0 text-[18px]  font-semibold line-clamp-2">
-                আমদানি–রপ্তানিতে ভাটা কনটেইনার ডিপোর ব্যবসা কমে গেছে
-              </h1>
-              <p className=" text-[13px] text-gray-400 mb-0">
-                ডিসেম্বর ২৭,২০২৩
-              </p>
-            </div>
-          </div>
+          </Link>
         )}
       </div>
     </div>

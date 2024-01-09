@@ -1,7 +1,12 @@
+import AboutUs from "@/modules/frontend/about-us";
 import React from "react";
 
 const AboutUsPage = () => {
-  return <div>AboutUsPage</div>;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 };
 
 export default AboutUsPage;
