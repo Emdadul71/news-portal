@@ -1,8 +1,10 @@
-import BlogCard from "@/modules/@common/blog-card";
+import CartMedium from "@/modules/frontend/news/categories/@components/CartMedium";
 
-import Link from "next/link";
 import React from "react";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
+import CartSmall from "../crime/@components/CartSmall";
+
+import AdvertiseSpace1 from "@/modules/frontend/news/categories/@components/Advertisement_Space/AdvertiseSpace1";
 
 const topStoriesData = [
   {
@@ -23,45 +25,20 @@ const topStoriesData = [
 const CountryNews = () => {
   return (
     <section className=" pb-0">
-      <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
-        <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
-          <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
-          <Link href="/">
-            <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary duration-300">
-              দেশের খবর
-            </h1>
-          </Link>
-        </div>
-        <div className="grid grid-cols-[1fr_308px] gap-5">
-          <div className="grid grid-cols-3 gap-3 border-r pr-3">
-            {topStoriesData?.map((item: any, i: any) => {
-              const isFirst = i == 0;
-              const isSecond = i == 1;
-              return (
-                <BlogCard
-                  key={i}
-                  data={item}
-                  classes={{
-                    root: isFirst
-                      ? "col-span-2 row-span-2 border-r pr-3"
-                      : isSecond
-                      ? "border-b pb-4"
-                      : "mt-3",
-                    imageWrapper: isFirst
-                      ? "mb-4 md:!h-[350px]"
-                      : "!mb-4 md:!h-[190px]",
-                    imageStyle: isFirst
-                      ? "!h-full object-cover"
-                      : "h-full object-cover",
-                    title: isFirst ? "text-28px " : "text-xl !mb-0",
-                    desc: isFirst ? "mb-3" : "hidden",
-                    date: isFirst ? "" : "hidden",
-                  }}
-                />
-              );
-            })}
+      <div className=" container mb-[26px] pb-[26px] border-b-[1px] border-gray-200">
+        <div className=" grid grid-cols-[2fr_1fr_1fr] ">
+          <div className=" border-r-[1px] border-gray-200 pr-[13px] mr-[13px]">
+            <CartMedium />
           </div>
-          <div>test</div>
+          <div className=" grid  border-r-[1px] border-gray-200 pr-[13px] mr-[13px] ">
+            <CartSmall />
+            <div className=" border-b-[1px] border-gray-200 mb-[13px] pb-[13px]"></div>
+            <CartSmall />
+          </div>
+          <div>
+            {/* <NewsSearch /> */}
+            <AdvertiseSpace1 />
+          </div>
         </div>
       </div>
     </section>
@@ -69,3 +46,48 @@ const CountryNews = () => {
 };
 
 export default CountryNews;
+{
+  /* <section className=" pb-0">
+<div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
+  <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
+    <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
+    <Link href="/">
+      <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary duration-300">
+        দেশের খবর
+      </h1>
+    </Link>
+  </div>
+  <div className="grid grid-cols-[1fr_308px] gap-5">
+    <div className="grid grid-cols-3 gap-3 border-r pr-3">
+      {topStoriesData?.map((item: any, i: any) => {
+        const isFirst = i == 0;
+        const isSecond = i == 1;
+        return (
+          <BlogCard
+            key={i}
+            data={item}
+            classes={{
+              root: isFirst
+                ? "col-span-2 row-span-2 border-r pr-3"
+                : isSecond
+                ? "border-b pb-4"
+                : "mt-3",
+              imageWrapper: isFirst
+                ? "mb-4 md:!h-[350px]"
+                : "!mb-4 md:!h-[190px]",
+              imageStyle: isFirst
+                ? "!h-full object-cover"
+                : "h-full object-cover",
+              title: isFirst ? "text-28px " : "text-xl !mb-0",
+              desc: isFirst ? "mb-3" : "hidden",
+              date: isFirst ? "" : "hidden",
+            }}
+          />
+        );
+      })}
+    </div>
+    <div>test</div>
+  </div>
+</div>
+</section> */
+}

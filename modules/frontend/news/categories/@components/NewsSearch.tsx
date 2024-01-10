@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { FiMapPin } from "react-icons/fi";
 
-export default function NewsSearch() {
+const NewsSearch = () => {
   return (
     <div className=" felx flex-col self-start">
       <div className=" bg-[#FAFCFF] p-[26px] ">
@@ -61,4 +61,6 @@ export default function NewsSearch() {
       </div>
     </div>
   );
-}
+};
+
+export default NewsSearch;
