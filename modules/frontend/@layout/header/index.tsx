@@ -60,7 +60,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-[1000] bg-white border-b-[1px] border-gray-200 pb-[20px]">
+      <div className="sticky top-0 z-[1000] bg-white border-b-[1px] border-gray-200 pb-[20px] mb-[26px]">
         <section className="py-5">
           <div className="container">
             <div className="grid grid-cols-[auto_1fr_auto] gap-5 md:gap-[150px] items-center py-4 lg:py-0 mb-[30px]">

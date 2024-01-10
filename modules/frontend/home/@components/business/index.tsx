@@ -15,12 +15,13 @@ function Business() {
           {new Array(4).fill(
             <Link href={"/"} className="group hover:text-inherit">
               <div className=" flex flex-col gap-3 pr-4">
-                <div className=" mb-[5px]   bg-gradient-to-t from-black  w-full h-[396px] flex justify-end flex-col relative ">
+                <div className=" mb-[5px] bg-gradient-to-t from-black  w-full h-[396px] flex justify-end flex-col relative">
                   <Image
                     height={190}
                     width={295}
                     src={"/images/home/business.png"}
                     alt="crime"
+                    className=""
                   />
                 </div>
                 <h1 className=" text-[20px] font-semibold mb-0 group-hover:text-primary transition-all">
