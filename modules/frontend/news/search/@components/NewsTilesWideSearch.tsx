@@ -6,7 +6,7 @@ export default function NewsTilesWide() {
   return (
     <Link href={"/"} className="group hover:text-inherit">
       <div>
-        <div className=" grid grid-cols-[2fr_1fr] gap-[13px] pb-[16px] mb-[16px] border-b-[1px] border-gray-200">
+        <div className=" grid grid-cols-[2fr_1fr] gap-[13px] ">
           <div className=" w-full flex flex-col gap-[6px] ">
             <h1 className=" text-xl mb-[6px]  line-clamp-2 leading-[26px] group-hover:text-primary transition-all ">
               বিশ্বকাপ দলে না থেকেও যে কারণে ব্যর্থতার তদন্তে তামিম

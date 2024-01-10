@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IoMdPlayCircle } from "react-icons/io";
 import React from "react";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { MdKeyboardDoubleArrowRight, MdPlayArrow } from "react-icons/md";
 
 const VideoGallery = () => {
   return (
@@ -17,7 +17,7 @@ const VideoGallery = () => {
           <div className=" flex flex-col gap-[29px] relative">
             <div>
               <div>
-                <IoMdPlayCircle className="text-[#FE0000] text-[40px] absolute top-0 left-0 m-[10px] bg-white rounded-full " />
+                <MdPlayArrow className="bg-[#FE0000] rounded-full text-white text-[25px] absolute top-0 left-0 m-[10px] cursor-pointer" />
               </div>
               <Image
                 height={190}
@@ -38,7 +38,7 @@ const VideoGallery = () => {
               <div className=" flex flex-col gap-[17px] relative">
                 <div>
                   <div>
-                    <IoMdPlayCircle className="text-[#FE0000] text-[26px] absolute top-0 left-0 m-[10px] bg-white rounded-full" />
+                    <MdPlayArrow className="bg-[#FE0000] rounded-full text-white text-[25px] absolute top-0 left-0 m-[10px] cursor-pointer" />
                   </div>
                   <Image
                     height={190}

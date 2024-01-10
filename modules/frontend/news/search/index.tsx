@@ -4,6 +4,7 @@ import Link from "next/link";
 import NewsTilesWideSearch from "./@components/NewsTilesWideSearch";
 import React from "react";
 import AdvertiseSpace1 from "../categories/@components/Advertisement_Space/AdvertiseSpace1";
+import NewsTilesWide from "./@components/NewsTilesWideSearch";
 
 function SearchTab() {
   const items = [
@@ -91,7 +92,22 @@ function SearchTab() {
               items={items}
             />
           </div>
-          <div>{new Array(10).fill(<NewsTilesWideSearch />)}</div>
+          <div>
+            {new Array(10).fill(0).map((_, i: any) => {
+              const lst = i < 9;
+              return (
+                <div
+                  className={`${
+                    lst
+                      ? " pb-[16px] mb-[16px] border-b-[1px] border-gray-200 "
+                      : ""
+                  }`}
+                >
+                  <NewsTilesWide />
+                </div>
+              );
+            })}
+          </div>
           <div>
             <AdvertiseSpace1 />
           </div>

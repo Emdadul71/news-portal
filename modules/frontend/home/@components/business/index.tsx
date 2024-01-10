@@ -5,8 +5,8 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Business() {
   return (
-    <section>
-      <div className=" container">
+    <section className=" pb-0">
+      <div className=" container border-b-[1px] border-gray-200 pb-[60px] mb-[26px]">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
           <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
           <h1 className=" text-[28px]  font-semibold mb-0">বাণিজ্য</h1>
@@ -15,15 +15,13 @@ function Business() {
           {new Array(4).fill(
             <Link href={"/"} className="group hover:text-inherit">
               <div className=" flex flex-col gap-3 pr-4">
-                <div className=" mb-[5px] bg-gradient-to-t from-black  w-full h-[396px] flex justify-end flex-col relative">
-                  <Image
-                    height={190}
-                    width={295}
-                    src={"/images/home/business.png"}
-                    alt="crime"
-                    className=""
-                  />
-                </div>
+                <Image
+                  height={190}
+                  width={295}
+                  src={"/images/home/business.png"}
+                  alt="crime"
+                />
+
                 <h1 className=" text-[20px] font-semibold mb-0 group-hover:text-primary transition-all">
                   আমদানি–রপ্তানিতে ভাটা কনটেইনার ডিপোর ব্যবসা কমে গেছে
                 </h1>

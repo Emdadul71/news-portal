@@ -5,8 +5,8 @@ import { RxCross2 } from "react-icons/rx";
 const BreakingNews = () => {
   return (
     <>
-      <section>
-        <div className="container">
+      <section className=" pb-0">
+        <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
           <div className=" flex flex-col gap-6">
             <h1 className=" mb-0 text-[28px] font-semibold">
               সদ্যপ্রাপ্ত সংবাদ

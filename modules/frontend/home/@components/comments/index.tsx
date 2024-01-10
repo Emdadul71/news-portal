@@ -5,9 +5,9 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Comments() {
   return (
-    <section>
-      <div className=" container">
-        <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
+    <section className=" pb-0">
+      <div className=" container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
+        <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer ">
           <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
           <h1 className=" text-[28px]  font-semibold mb-0">মতামত</h1>
         </div>
@@ -46,35 +46,41 @@ function Comments() {
             </div>
           </Link>
           <div>
-            {new Array(3).fill(
-              <div>
-                <Link href={"/"}>
-                  <div className="  flex items-start gap-[14px]">
-                    <div className=" h-[70px] w-[70px] ">
-                      <Image
-                        height={190}
-                        width={295}
-                        src={"/images/home/comment.png"}
-                        className=" rounded-full"
-                        alt="crime"
-                      />
+            {new Array(3).fill(0).map((_, i: any) => {
+              const lst = i < 2;
+              console.log(i);
+              return (
+                <div key={i}>
+                  <Link href={"/"}>
+                    <div className="  flex items-start gap-[14px]">
+                      <div className=" h-[70px] w-[70px] ">
+                        <Image
+                          height={190}
+                          width={295}
+                          src={"/images/home/comment.png"}
+                          className=" rounded-full"
+                          alt="crime"
+                        />
+                      </div>
+                      <div className=" flex flex-col gap-[6px]">
+                        <p className=" mb-0 text-[#FE0000] text-[16px] font-semibold">
+                          মতামত
+                        </p>
+                        <h1 className=" mb-0 text-[18px] font-semibold">
+                          মানবাধিকার পরিস্থিতি: স্বাধীন তদন্ত কমিশন গঠনে বাধা
+                          কোথায়
+                        </h1>
+                        <p className=" mb-0 mt-1">অ্যান্ড্রু মিত্রোভিকা</p>
+                        <p className=" mb-0">সাংবাদিক</p>
+                      </div>
                     </div>
-                    <div className=" flex flex-col gap-[6px]">
-                      <p className=" mb-0 text-[#FE0000] text-[16px] font-semibold">
-                        মতামত
-                      </p>
-                      <h1 className=" mb-0 text-[18px] font-semibold">
-                        মানবাধিকার পরিস্থিতি: স্বাধীন তদন্ত কমিশন গঠনে বাধা
-                        কোথায়
-                      </h1>
-                      <p className=" mb-0 mt-1">অ্যান্ড্রু মিত্রোভিকা</p>
-                      <p className=" mb-0">সাংবাদিক</p>
-                    </div>
-                  </div>
-                </Link>
-                <div className="h-[1px] w-full  bg-[#DBDADE] mt-[9px] mb-[14px]"></div>
-              </div>
-            )}
+                  </Link>
+                  {lst && (
+                    <div className="h-[1px] w-full  bg-[#DBDADE] my-[25px]"></div>
+                  )}
+                </div>
+              );
+            })}
           </div>
           <div>
             <Image

@@ -13,7 +13,7 @@ const Categories = () => {
     <section>
       <div className=" container ">
         <HeadingWithOption />
-        <div className=" grid grid-cols-[3fr_1fr]   mt-[26px] gap-[13px] border-b-[1px] border-gray-300 pb-[26px] ">
+        <div className=" grid grid-cols-[3fr_1fr]   mt-[26px] gap-[13px] border-b-[1px] border-gray-200 pb-[26px] ">
           <div className="grid grid-cols-[2fr_1fr] gap-[26px] self-start border-gray-200  border-r-[1px] pr-[13px]">
             <HeadingWithOverlay />
             <CartMedium />

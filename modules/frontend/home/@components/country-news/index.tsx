@@ -1,5 +1,8 @@
 import BlogCard from "@/modules/@common/blog-card";
+
+import Link from "next/link";
 import React from "react";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const topStoriesData = [
   {
@@ -19,8 +22,16 @@ const topStoriesData = [
 ];
 const CountryNews = () => {
   return (
-    <section>
-      <div className="container">
+    <section className=" pb-0">
+      <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
+        <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
+          <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
+          <Link href="/">
+            <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary duration-300">
+              দেশের খবর
+            </h1>
+          </Link>
+        </div>
         <div className="grid grid-cols-[1fr_308px] gap-5">
           <div className="grid grid-cols-3 gap-3 border-r pr-3">
             {topStoriesData?.map((item: any, i: any) => {

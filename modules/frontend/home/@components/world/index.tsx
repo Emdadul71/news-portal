@@ -7,8 +7,8 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function World() {
   return (
-    <section>
-      <div className=" container">
+    <section className=" pb-0">
+      <div className=" container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
           <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
           <h1 className=" text-[28px]  font-semibold mb-0">বিশ্ব</h1>
@@ -25,9 +25,9 @@ function World() {
                   className="h-full w-full absolute object-cover mix-blend-overlay "
                 />
                 <div className=" m-[24px] flex flex-col gap-[10px] absolute">
-                  <div className=" text-[9px] text-black mb-0 bg-white px-[4px] h-[18px] w-[20px]">
+                  <span className=" text-[9px] text-black mb-0 bg-white px-[4px] h-[18px] w-[20px]">
                     বিশ্ব
-                  </div>
+                  </span>
                   <h1 className=" text-[28px] font-semibold text-[#FFF] mb-0 hover:text-primary duration-300">
                     জাপানে ভূমিকম্পে ১৩ জনের প্রাণহানি, এক দিনে ১৫৫ কম্পন
                   </h1>

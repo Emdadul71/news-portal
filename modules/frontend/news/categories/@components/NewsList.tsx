@@ -10,7 +10,22 @@ export default function NewsList() {
         <div>
           <AdvertiseSpace3 />
         </div>
-        <div>{new Array(10).fill(<NewsTilesWide />)}</div>
+        <div>
+          {new Array(5).fill(0).map((_, i: any) => {
+            const lst = i < 4;
+            return (
+              <div
+                className={`${
+                  lst
+                    ? " pb-[16px] mb-[16px] border-b-[1px] border-gray-200 "
+                    : ""
+                }`}
+              >
+                <NewsTilesWide />
+              </div>
+            );
+          })}
+        </div>
         <div>
           <AdvertiseSpace4 />
         </div>

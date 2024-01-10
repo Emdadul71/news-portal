@@ -47,8 +47,8 @@ const topStoriesData1 = [
 
 const Crime = () => {
   return (
-    <section>
-      <div className="container">
+    <section className=" pb-0">
+      <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
           <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
           <Link href="/">

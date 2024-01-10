@@ -30,8 +30,8 @@ const topStoriesData = [
 ];
 const TopStories = () => {
   return (
-    <section>
-      <div className="container">
+    <section className=" pb-0">
+      <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
         <h2>শীর্ষ খবর</h2>
         <div className="grid lg:grid-cols-4 gap-6 ">
           {topStoriesData?.map((item: any, i: any) => {

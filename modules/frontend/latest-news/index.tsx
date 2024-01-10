@@ -34,14 +34,29 @@ export default function LatestNewsPage() {
       <div className=" flex justify-end">
         <div>
           <div className=" grid grid-cols-[616px_300px] gap-[27px]">
-            <div>{new Array(5).fill(<NewsTilesWide />)}</div>
+            <div>
+              {new Array(5).fill(0).map((_, i: any) => {
+                const lst = i < 4;
+                return (
+                  <div
+                    className={`${
+                      lst
+                        ? " pb-[16px] mb-[16px] border-b-[1px] border-gray-200 "
+                        : ""
+                    }`}
+                  >
+                    <NewsTilesWide />
+                  </div>
+                );
+              })}
+            </div>
             <div>
               <AdvertiseSpace1 />
             </div>
           </div>
         </div>
       </div>
-      <div className=" flex justify-center mb-[20px]">
+      <div className=" flex justify-center mb-[20px] mt-[40px]">
         <button className="px-[24px] py-[12px] border-[1px] text-[15px] text-black font-medium hover:bg-primary transition-all hover:text-white">
           আরও দেখুন
         </button>
