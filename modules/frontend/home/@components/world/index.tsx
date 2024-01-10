@@ -11,7 +11,11 @@ function World() {
       <div className=" container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
           <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
-          <h1 className=" text-[28px]  font-semibold mb-0">বিশ্ব</h1>
+          <Link href={"/"}>
+            <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary transition-all">
+              বিশ্ব
+            </h1>
+          </Link>
         </div>
         <div className=" grid grid-cols-[615px_295px_295px] gap-[20px]">
           <div>

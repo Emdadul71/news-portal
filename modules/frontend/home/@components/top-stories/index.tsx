@@ -1,4 +1,5 @@
 import BlogCard from "@/modules/@common/blog-card";
+import Link from "next/link";
 import React from "react";
 
 const topStoriesData = [
@@ -32,7 +33,9 @@ const TopStories = () => {
   return (
     <section className=" pb-0">
       <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
-        <h2>শীর্ষ খবর</h2>
+        <Link href={"/"}>
+          <h2 className=" hover:text-primary transition-all">শীর্ষ খবর</h2>
+        </Link>
         <div className="grid lg:grid-cols-4 gap-6 ">
           {topStoriesData?.map((item: any, i: any) => {
             const isFirst = i == 0;

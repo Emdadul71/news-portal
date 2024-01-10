@@ -8,9 +8,11 @@ const BreakingNews = () => {
       <section className=" pb-0">
         <div className="container border-b-[1px] border-gray-200 pb-[26px] mb-[26px]">
           <div className=" flex flex-col gap-6">
-            <h1 className=" mb-0 text-[28px] font-semibold">
-              সদ্যপ্রাপ্ত সংবাদ
-            </h1>
+            <Link href={"/"}>
+              <h1 className=" mb-0 text-[28px] font-semibold hover:text-primary transition-all">
+                সদ্যপ্রাপ্ত সংবাদ
+              </h1>
+            </Link>
             <div className=" grid grid-cols-3 gap-[26px]">
               {new Array(3).fill(
                 <Link href="/">

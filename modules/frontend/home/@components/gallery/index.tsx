@@ -1,5 +1,6 @@
 import BlogCard from "@/modules/@common/blog-card";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
@@ -35,8 +36,12 @@ const Gallery = () => {
     <section>
       <div className="container">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
-          <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
-          <h1 className=" text-[28px]  font-semibold mb-0">গ্যালারী</h1>
+          <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px] " />
+          <Link href="/">
+            <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary transition-all">
+              গ্যালারী
+            </h1>
+          </Link>
         </div>
         <div className="grid grid-cols-4 gap-[30px]">
           {topStoriesData?.map((item: any, i: any) => {

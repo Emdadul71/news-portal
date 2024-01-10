@@ -9,7 +9,11 @@ function Business() {
       <div className=" container border-b-[1px] border-gray-200 pb-[60px] mb-[26px]">
         <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
           <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
-          <h1 className=" text-[28px]  font-semibold mb-0">বাণিজ্য</h1>
+          <Link href={"/"}>
+            <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary transition-all">
+              বাণিজ্য
+            </h1>
+          </Link>
         </div>
         <div className=" grid grid-cols-4">
           {new Array(4).fill(
