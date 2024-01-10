@@ -48,6 +48,9 @@ const CountryNews = () => {
           <div>
             {/* <NewsSearch /> */}
             <AdvertiseSpace1 />
+            <div>
+              <p>News Search</p>
+            </div>
           </div>
         </div>
       </div>
