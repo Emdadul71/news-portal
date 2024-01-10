@@ -5,6 +5,8 @@ import React from "react";
 import CartSmall from "../crime/@components/CartSmall";
 
 import AdvertiseSpace1 from "@/modules/frontend/news/categories/@components/Advertisement_Space/AdvertiseSpace1";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import Link from "next/link";
 
 const topStoriesData = [
   {
@@ -26,6 +28,14 @@ const CountryNews = () => {
   return (
     <section className=" pb-0">
       <div className=" container mb-[26px] pb-[26px] border-b-[1px] border-gray-200">
+        <div className=" flex items-center gap-3 h-[36px] mb-[26px] cursor-pointer">
+          <MdKeyboardDoubleArrowRight className="text-[#FE0000] text-[30px]" />
+          <Link href="/">
+            <h1 className=" text-[28px]  font-semibold mb-0 hover:text-primary duration-300">
+              দেশের খবর
+            </h1>
+          </Link>
+        </div>
         <div className=" grid grid-cols-[2fr_1fr_1fr] ">
           <div className=" border-r-[1px] border-gray-200 pr-[13px] mr-[13px]">
             <CartMedium />
