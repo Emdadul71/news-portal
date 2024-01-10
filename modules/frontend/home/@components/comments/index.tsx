@@ -12,13 +12,13 @@ function Comments() {
           <h1 className=" text-[28px]  font-semibold mb-0">মতামত</h1>
         </div>
         <div className=" grid grid-cols-[400px_430px_1fr] gap-[26px]">
-          <Link href={"/"}>
+          <Link href={"/"} className="group hover:text-inherit">
             <div className=" px-[25px] py-[25px] border border-gray-200">
               <div className=" flex flex-col gap-3">
                 <div className=" bg-[#FE0000] text-white p-1 w-[60px] text-center">
                   মতামত
                 </div>
-                <h1 className=" text-[28px] mb-0 font-semibold">
+                <h1 className=" text-[28px] mb-0 font-semibold group-hover:text-primary transition-all">
                   আমেরিকার প্রেসিডেন্ট কে হলো, তাতে আমাদের কী
                 </h1>
               </div>
@@ -51,7 +51,7 @@ function Comments() {
               console.log(i);
               return (
                 <div key={i}>
-                  <Link href={"/"}>
+                  <Link href={"/"} className="group hover:text-inherit">
                     <div className="  flex items-start gap-[14px]">
                       <div className=" h-[70px] w-[70px] ">
                         <Image
@@ -66,7 +66,7 @@ function Comments() {
                         <p className=" mb-0 text-[#FE0000] text-[16px] font-semibold">
                           মতামত
                         </p>
-                        <h1 className=" mb-0 text-[18px] font-semibold">
+                        <h1 className=" mb-0 text-[18px] font-semibold group-hover:text-primary transition-all">
                           মানবাধিকার পরিস্থিতি: স্বাধীন তদন্ত কমিশন গঠনে বাধা
                           কোথায়
                         </h1>
