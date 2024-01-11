@@ -15,9 +15,9 @@ const BreakingNews = () => {
             </Link>
             <div className=" grid grid-cols-3 gap-[26px]">
               {new Array(3).fill(
-                <Link href="/">
+                <Link href="/" className="group hover:text-inherit">
                   <div className=" flex flex-col gap-2 pr-4  border border-gray-100 p-[24px]">
-                    <h1 className=" text-[16px] font-semibold mb-0">
+                    <h1 className=" text-[16px] font-semibold mb-0 group-hover:text-primary transition-all ">
                       ড. ইউনূসকে দোষী সাব্যস্ত করা বাংলাদেশের মানবাধিকারের
                       অবরুদ্ধ দশার প্রতীক: অ্যামনেস্টি
                     </h1>

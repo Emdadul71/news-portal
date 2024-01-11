@@ -134,8 +134,8 @@ function World() {
 
           <div className=" flex flex-col gap-[15px]">
             <Link href={"/"}>
-              <h1 className=" mb-0 text-[20px] font-medium">অনলাইন ভোট</h1>
-              <div>
+              <h1 className=" mb-[15px] text-[20px] font-medium">অনলাইন ভোট</h1>
+              <div className=" mb-[15px]">
                 <Image
                   height={190}
                   width={295}
@@ -143,7 +143,7 @@ function World() {
                   alt="crime"
                 />
               </div>
-              <div className=" flex gap-[5px] items-center">
+              <div className=" flex gap-[5px] items-center mb-[7px]">
                 <p className=" text-[13px] mb-0 text-[#FE0000]">অর্থনীতি </p>
                 <GoDotFill className=" text-[12px] text-[#424242]" />
                 <p className=" text-[13px] mb-0 text-[#828282]">মুদ্রাস্ফীতি</p>
